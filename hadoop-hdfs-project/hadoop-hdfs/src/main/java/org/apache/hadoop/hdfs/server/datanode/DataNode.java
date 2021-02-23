@@ -429,6 +429,10 @@ public class DataNode extends ReconfigurableBase
   /**
    * Create the DataNode given a configuration, an array of dataDirs,
    * and a namenode proxy
+   *
+   *
+   * 在给定配置、datadir 数组和namenode 代理的情况下创建DataNode
+   *
    */
   DataNode(final Configuration conf,
            final List<StorageLocation> dataDirs,
@@ -483,8 +487,10 @@ public class DataNode extends ReconfigurableBase
     try {
       hostName = getHostName(conf);
       LOG.info("Configured hostname is " + hostName);
-      //TODO 启动DataNode
+
+      //TODO ***启动DataNode***
       startDataNode(conf, dataDirs, resources);
+
     } catch (IOException ie) {
       shutdown();
       throw ie;
@@ -807,17 +813,22 @@ public class DataNode extends ReconfigurableBase
    * @see DFSUtil#getHttpPolicy(org.apache.hadoop.conf.Configuration)
    * for information related to the different configuration options and
    * Http Policy is decided.
+   *
+   *
+   *
    */
   private void startInfoServer(Configuration conf)
     throws IOException {
     Configuration confForInfoServer = new Configuration(conf);
     confForInfoServer.setInt(HttpServer2.HTTP_MAX_THREADS, 10);
+
     //TODO 用来接收 http的请求
     HttpServer2.Builder builder = new HttpServer2.Builder()
       .setName("datanode")
       .setConf(conf).setACL(new AccessControlList(conf.get(DFS_ADMIN, " ")))
       .addEndpoint(URI.create("http://localhost:0"))
       .setFindPort(true);
+
 
     this.infoServer = builder.build();
     //添加 servlet
@@ -831,6 +842,7 @@ public class DataNode extends ReconfigurableBase
                                BlockScanner.Servlet.class);
     //启动 httpserver
     this.infoServer.start();
+
     InetSocketAddress jettyAddr = infoServer.getConnectorAddress(0);
 
     // SecureDataNodeStarter will bind the privileged port to the channel if
@@ -876,6 +888,7 @@ public class DataNode extends ReconfigurableBase
 
     BlockingService service = ClientDatanodeProtocolService
         .newReflectiveBlockingService(clientDatanodeProtocolXlator);
+
     //这个代码就是来创建 RPC 服务端的 jps 可以看见
     ipcServer = new RPC.Builder(conf)
         .setProtocol(ClientDatanodeProtocolPB.class)
@@ -974,7 +987,12 @@ public class DataNode extends ReconfigurableBase
       directoryScanner.shutdown();
     }
   }
-  
+
+  /**
+   * 创建读写服务 dataXceiver
+   * @param conf
+   * @throws IOException
+   */
   private void initDataXceiver(Configuration conf) throws IOException {
     // find free port or use privileged port provided
     TcpPeerServer tcpPeerServer;
@@ -988,6 +1006,7 @@ public class DataNode extends ReconfigurableBase
     tcpPeerServer.setReceiveBufferSize(HdfsConstants.DEFAULT_DATA_SOCKET_SIZE);
     streamingAddr = tcpPeerServer.getStreamingAddr();
     LOG.info("Opened streaming server at " + streamingAddr);
+
     this.threadGroup = new ThreadGroup("dataXceiverServer");
     //TODO datanode 创建xserver 客户端和其他DataNode 传过来的请求
     xserver = new DataXceiverServer(tcpPeerServer, conf, this);
@@ -1144,7 +1163,10 @@ public class DataNode extends ReconfigurableBase
 
   /**
    * This method starts the data node with the specified conf.
-   * 
+   *
+   *   使用指定的 conf 启动datanode
+   *
+   *
    * @param conf - the configuration
    *  if conf's CONFIG_PROPERTY_SIMULATED property is set
    *  then a simulated storage based data node is created.
@@ -1192,11 +1214,13 @@ public class DataNode extends ReconfigurableBase
     }
     LOG.info("Starting DataNode with maxLockedMemory = " +
         dnConf.maxLockedMemory);
-    //初始化 storage对象 先记录下来
+
+    //初始化 storage对象 先记录下来  存储数据的对象
     storage = new DataStorage();
     
     // global DN settings
     registerMXBean();
+
     //TODO 初始化 DataX服务 超级重要 读写服务
     initDataXceiver(conf);
 
@@ -1213,6 +1237,7 @@ public class DataNode extends ReconfigurableBase
     dnUserName = UserGroupInformation.getCurrentUser().getShortUserName();
     LOG.info("dnUserName = " + dnUserName);
     LOG.info("supergroup = " + supergroup);
+
     //启动 datanode RPC server
     initIpcServer(conf);
 
@@ -1241,8 +1266,10 @@ public class DataNode extends ReconfigurableBase
     blockPoolManager.refreshNamenodes(conf);
 
     // Create the ReadaheadPool from the DataNode context so we can
+
     // exit without having to explicitly shutdown its thread pool.
     readaheadPool = ReadaheadPool.getInstance();
+
     saslClient = new SaslDataTransferClient(dnConf.conf, 
         dnConf.saslPropsResolver, dnConf.trustedChannelResolver);
     saslServer = new SaslDataTransferServer(dnConf, blockPoolTokenSecretManager);
@@ -1565,9 +1592,12 @@ public class DataNode extends ReconfigurableBase
 
   /**
    * Connect to the NN. This is separated out for easier testing.
+   *
+   *
    */
   DatanodeProtocolClientSideTranslatorPB connectToNN(
       InetSocketAddress nnAddr) throws IOException {
+    //TODO 创建DatanodeProtocolClient
     return new DatanodeProtocolClientSideTranslatorPB(nnAddr, conf);
   }
 
@@ -2421,12 +2451,17 @@ public class DataNode extends ReconfigurableBase
   
   /** Instantiate & Start a single datanode daemon and wait for it to finish.
    *  If this thread is specifically interrupted, it will stop waiting.
+   *
+   *  初始化并且启动一个 datanode 进程 并且等待它完成。
+   *  如果这个线程已经确定被打断，就停止等待
+   *
+   *
    */
   @VisibleForTesting
   @InterfaceAudience.Private
   public static DataNode createDataNode(String args[], Configuration conf,
       SecureResources resources) throws IOException {
-
+    //初始化 datanode
     DataNode dn = instantiateDataNode(args, conf, resources);
 
     if (dn != null) {
@@ -2473,6 +2508,10 @@ public class DataNode extends ReconfigurableBase
    * Make an instance of DataNode after ensuring that at least one of the
    * given data directories (and their parent directories, if necessary)
    * can be created.
+   *
+   * 在确保至少可以创建一个给定的数据目录（以及它们的父目录，如果需要）之后，创建DataNode的实例。
+   *
+   *
    * @param dataDirs List of directories, where the new DataNode instance should
    * keep its files.
    * @param conf Configuration instance to use.
@@ -2611,7 +2650,7 @@ public class DataNode extends ReconfigurableBase
 
     try {
       StringUtils.startupShutdownMessage(DataNode.class, args, LOG);
-
+      //创建 datanode
       DataNode datanode = createDataNode(args, null, resources);
 
       if (datanode != null) {
@@ -2638,7 +2677,7 @@ public class DataNode extends ReconfigurableBase
     if (DFSUtil.parseHelpArgument(args, DataNode.USAGE, System.out, true)) {
       System.exit(0);
     }
-
+    //TODO 启动 datanode 代码
     secureMain(args, null);
   }
 

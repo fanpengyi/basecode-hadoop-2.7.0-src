@@ -17,8 +17,6 @@
  */
 package org.apache.hadoop.hdfs.server.blockmanagement;
 
-import static org.apache.hadoop.util.Time.monotonicNow;
-
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 import com.google.common.net.InetAddresses;
@@ -52,6 +50,8 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import java.util.*;
+
+import static org.apache.hadoop.util.Time.monotonicNow;
 
 /**
  * Manage datanodes, include decommission and other activities.
@@ -587,7 +587,7 @@ public class DatanodeManager {
   }
 
   /** Add a datanode. */
-  //TODO 就是往一堆数据结构里面添加信息
+  //TODO 注册其实就是往一堆数据结构里面添加信息
   void addDatanode(final DatanodeDescriptor node) {
     // To keep host2DatanodeMap consistent with datanodeMap,
     // remove  from host2DatanodeMap the datanodeDescriptor removed
@@ -596,6 +596,7 @@ public class DatanodeManager {
       host2DatanodeMap.remove(datanodeMap.put(node.getDatanodeUuid(), node));
     }
     //TODO  往数据结构里面添加一条数据
+    //
     networktopology.add(node); // may throw InvalidTopologyException
     //TODO 往内存中加入一条数据
     host2DatanodeMap.add(node);
@@ -844,6 +845,9 @@ public class DatanodeManager {
    * Register the given datanode with the namenode. NB: the given
    * registration is mutated and given back to the datanode.
    *
+   * 用 namenode 注册给定的 datanode 。注意：给定的注册经过封装还返回给datanode。
+   *
+   * TODO 核心代码约在 985行
    * @param nodeReg the datanode registration
    * @throws DisallowedDatanodeException if the registration request is
    *    denied because the datanode does not match includes/excludes
@@ -858,6 +862,7 @@ public class DatanodeManager {
       // Mostly called inside an RPC, update ip and peer hostname
       String hostname = dnAddress.getHostName();
       String ip = dnAddress.getHostAddress();
+
       if (checkIpHostnameInRegistration && !isNameResolved(dnAddress)) {
         // Reject registration of unresolved datanode to prevent performance
         // impact of repetitive DNS lookups later.
@@ -977,13 +982,16 @@ public class DatanodeManager {
         networktopology.add(nodeDescr);
         nodeDescr.setSoftwareVersion(nodeReg.getSoftwareVersion());
   
-        // register new datanode
+
         //TODO 注册 添加信息到内存中
+        // register new datanode
+
         addDatanode(nodeDescr);
         // also treat the registration message as a heartbeat
         // no need to update its timestamp
         // because its is done when the descriptor is created
-        //把注册上来的 DATa Node加入到 heartManager中 方便后面进行心跳管理
+
+        //把注册上来的 data Node加入到 heartManager中 方便后面进行心跳管理
         heartbeatManager.addDatanode(nodeDescr);
 
         incrementVersionCount(nodeReg.getSoftwareVersion());

@@ -17,52 +17,31 @@
  */
 package org.apache.hadoop.hdfs.server.datanode;
 
-import static org.apache.hadoop.util.Time.monotonicNow;
-
-import java.io.EOFException;
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.SocketTimeoutException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-
+import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Joiner;
+import com.google.common.collect.Maps;
 import org.apache.commons.logging.Log;
 import org.apache.hadoop.classification.InterfaceAudience;
 import org.apache.hadoop.ha.HAServiceProtocol.HAServiceState;
-import org.apache.hadoop.hdfs.client.BlockReportOptions;
 import org.apache.hadoop.hdfs.DFSUtil;
-import org.apache.hadoop.hdfs.protocol.BlockListAsLongs;
-import org.apache.hadoop.hdfs.protocol.DatanodeInfo;
-import org.apache.hadoop.hdfs.protocol.ExtendedBlock;
-import org.apache.hadoop.hdfs.protocol.LocatedBlock;
-import org.apache.hadoop.hdfs.protocol.RollingUpgradeStatus;
-import org.apache.hadoop.hdfs.protocol.UnregisteredNodeException;
+import org.apache.hadoop.hdfs.client.BlockReportOptions;
+import org.apache.hadoop.hdfs.protocol.*;
 import org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolClientSideTranslatorPB;
 import org.apache.hadoop.hdfs.server.common.IncorrectVersionException;
 import org.apache.hadoop.hdfs.server.namenode.FSNamesystem;
-import org.apache.hadoop.hdfs.server.protocol.BlockReportContext;
-import org.apache.hadoop.hdfs.server.protocol.DatanodeCommand;
-import org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration;
-import org.apache.hadoop.hdfs.server.protocol.DatanodeStorage;
-import org.apache.hadoop.hdfs.server.protocol.DisallowedDatanodeException;
-import org.apache.hadoop.hdfs.server.protocol.HeartbeatResponse;
-import org.apache.hadoop.hdfs.server.protocol.NamespaceInfo;
-import org.apache.hadoop.hdfs.server.protocol.ReceivedDeletedBlockInfo;
-import org.apache.hadoop.hdfs.server.protocol.StorageBlockReport;
-import org.apache.hadoop.hdfs.server.protocol.StorageReceivedDeletedBlocks;
-import org.apache.hadoop.hdfs.server.protocol.StorageReport;
-import org.apache.hadoop.hdfs.server.protocol.VolumeFailureSummary;
+import org.apache.hadoop.hdfs.server.protocol.*;
 import org.apache.hadoop.io.IOUtils;
 import org.apache.hadoop.ipc.RemoteException;
 import org.apache.hadoop.util.VersionInfo;
 import org.apache.hadoop.util.VersionUtil;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.collect.Maps;
+import java.io.EOFException;
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.SocketTimeoutException;
+import java.util.*;
+
+import static org.apache.hadoop.util.Time.monotonicNow;
 
 /**
  * A thread per active or standby namenode to perform:
@@ -216,6 +195,7 @@ class BPServiceActor implements Runnable {
 
   private void connectToNNAndHandshake() throws IOException {
     // TODO 获取 namenode 代理
+
     bpNamenode = dn.connectToNN(nnAddr);
 
     // First phase of the handshake with NN - get the namespace
@@ -782,12 +762,23 @@ class BPServiceActor implements Runnable {
 
   /**
    * Register one bp with the corresponding NameNode
+   *
+   * 用对应的namenode 注册相应的块池
+   *
    * <p>
    * The bpDatanode needs to register with the namenode on startup in order
    * 1) to report which storage it is serving now and 
    * 2) to receive a registrationID
    *  
    * issued by the namenode to recognize registered datanodes.
+   *
+   * bpDatanode 需要在启动时向 namenode注册，以便
+   *  1 报告正在使用的存储
+   *  2 接收注册ID
+   *
+   *  由namenode 识别信息并注册的datanode。
+   *
+   *
    * 
    * @param nsInfo current NamespaceInfo
    * @see FSNamesystem#registerDatanode(DatanodeRegistration)
@@ -804,7 +795,8 @@ class BPServiceActor implements Runnable {
     while (shouldRun()) {
       try {
         // Use returned registration from namenode with updated fields
-       //调用注册方法  ，这里是调用的 namenode的注册方法
+        //使用namenode返回的注册和更新的字段
+       //调用注册方法  ，这里是调用的 namenode 的注册方法 ,方法实现在 NameNodeRpcService 中
         bpRegistration = bpNamenode.registerDatanode(bpRegistration);
         //执行到这 注册已经成功了
         bpRegistration.setNamespaceInfo(nsInfo);
@@ -866,7 +858,7 @@ class BPServiceActor implements Runnable {
             LOG.error("Initialization failed for " + this + " "
                 + ioe.getLocalizedMessage());
             // TODO 如果有问题 sleep 5s ，继续去注册 会一直循环下去嘛？
-            // 不会一直循环下去的 ，Retry until all namenode's of BPOfferService failed initialization
+            // 不会一直循环下去的 ，会一直重试直到BPOfferService的所有namenode初始化失败
             sleepAndLogInterrupts(5000, "initializing");
           } else {
             runningState = RunningState.FAILED;

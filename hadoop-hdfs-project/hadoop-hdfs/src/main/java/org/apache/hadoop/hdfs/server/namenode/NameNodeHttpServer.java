@@ -268,7 +268,7 @@ public class NameNodeHttpServer {
     httpServer.addInternalServlet("fsck", "/fsck", FsckServlet.class,
         true);
 
-    //TODO 上传原数据请求
+    //TODO 上传元数据请求
     //SecondaryNamenode /standbyNamenode 合并出来的 FSImage 需要替换 Active NameNode的fsimage
     //发送 http 请求，请求就会转发到这个servlet
     httpServer.addInternalServlet("imagetransfer", ImageServlet.PATH_SPEC,

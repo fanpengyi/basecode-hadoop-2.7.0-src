@@ -113,8 +113,6 @@ public class NameNodeResourceChecker {
     this.conf = conf;
 
     volumes = new HashMap<String, CheckedVolume>();
-
-
     //
 
     //设置 磁盘阈值 ，剩余磁盘空间 100M 这里是写元数据的磁盘空间  duReserved

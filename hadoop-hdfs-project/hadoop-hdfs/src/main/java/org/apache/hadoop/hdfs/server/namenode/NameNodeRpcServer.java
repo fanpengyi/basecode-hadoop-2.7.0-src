@@ -1293,13 +1293,14 @@ class NameNodeRpcServer implements NamenodeProtocols {
   }
 
 
-  @Override // DatanodeProtocol
+  @Override // DatanodeProtocol  nodeReg 注册信息
   public DatanodeRegistration registerDatanode(DatanodeRegistration nodeReg)
       throws IOException {
-    //是否启动起来
+    //检查 namenode 是否启动起来 没启动抛异常
     checkNNStartup();
 
     verifySoftwareVersion(nodeReg);
+
     //TODO 注册 DataNode
     namesystem.registerDatanode(nodeReg);
 
@@ -1527,6 +1528,7 @@ class NameNodeRpcServer implements NamenodeProtocols {
   private void verifySoftwareVersion(DatanodeRegistration dnReg)
       throws IncorrectVersionException {
     String dnVersion = dnReg.getSoftwareVersion();
+
     if (VersionUtil.compareVersions(dnVersion, minimumDataNodeVersion) < 0) {
       IncorrectVersionException ive = new IncorrectVersionException(
           minimumDataNodeVersion, dnVersion, "DataNode", "NameNode");
@@ -1534,12 +1536,14 @@ class NameNodeRpcServer implements NamenodeProtocols {
       throw ive;
     }
     String nnVersion = VersionInfo.getVersion();
+
     if (!dnVersion.equals(nnVersion)) {
       String messagePrefix = "Reported DataNode version '" + dnVersion +
           "' of DN " + dnReg + " does not match NameNode version '" +
           nnVersion + "'";
       long nnCTime = nn.getFSImage().getStorage().getCTime();
       long dnCTime = dnReg.getStorageInfo().getCTime();
+
       if (nnCTime != dnCTime) {
         IncorrectVersionException ive = new IncorrectVersionException(
             messagePrefix + " and CTime of DN ('" + dnCTime +

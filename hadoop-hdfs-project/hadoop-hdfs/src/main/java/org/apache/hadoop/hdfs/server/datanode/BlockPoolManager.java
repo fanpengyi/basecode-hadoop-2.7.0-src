@@ -17,15 +17,11 @@
  */
 package org.apache.hadoop.hdfs.server.datanode;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.security.PrivilegedExceptionAction;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import com.google.common.base.Joiner;
+import com.google.common.base.Preconditions;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 import org.apache.commons.logging.Log;
 import org.apache.hadoop.classification.InterfaceAudience;
 import org.apache.hadoop.conf.Configuration;
@@ -33,11 +29,10 @@ import org.apache.hadoop.hdfs.DFSConfigKeys;
 import org.apache.hadoop.hdfs.DFSUtil;
 import org.apache.hadoop.security.UserGroupInformation;
 
-import com.google.common.base.Joiner;
-import com.google.common.base.Preconditions;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.security.PrivilegedExceptionAction;
+import java.util.*;
 
 /**
  * Manages the BPOfferService objects for the data node.
@@ -162,7 +157,13 @@ class BlockPoolManager {
       doRefreshNamenodes(newAddressMap);
     }
   }
-  
+
+  /**
+   * 进行 datanode 的注册 和心跳
+   *
+   * @param addrMap
+   * @throws IOException
+   */
   private void doRefreshNamenodes(
       Map<String, Map<String, InetSocketAddress>> addrMap) throws IOException {
     assert Thread.holdsLock(refreshNamenodesLock);
@@ -175,7 +176,9 @@ class BlockPoolManager {
       // Step 1. For each of the new nameservices, figure out whether
       // it's an update of the set of NNs for an existing NS,
       // or an entirely new nameservice.
-      //TODO 通常情况下 HDFS集群是 HA 架构 只会有一个  nameservice(hadoop1 hadoop2)
+
+      //TODO 通常情况下 HDFS集群是 HA 架构 只会有一个 nameservice(hadoop active | hadoop standby)
+
       /**
        * 如果是联邦架构 里面会有多个 nameservice
        * hadoop1,hadoop2 -> 联邦1 service1
@@ -185,7 +188,7 @@ class BlockPoolManager {
         if (bpByNameserviceId.containsKey(nameserviceId)) {
           toRefresh.add(nameserviceId);
         } else {
-          //TODO toadd 里面有多少id就有多少个联邦，一个联邦就是一个 nameservice
+          //TODO toadd 里面有多少id 就有多少个联邦，一个联邦就是一个 nameservice
           toAdd.add(nameserviceId);
         }
       }
@@ -210,6 +213,8 @@ class BlockPoolManager {
 
         //如果是2个联邦 那么这个地方就会有两个值
         //BPOfferservice -> 一个联邦  有两个联邦 执行两次
+
+        //TODO toAdd 里是 nameserviceId 有几个nameserviceId 就会创建几个 BPOfferService
         for (String nsToAdd : toAdd) {
           ArrayList<InetSocketAddress> addrs =
                   //如果有两个高可用
@@ -221,7 +226,6 @@ class BlockPoolManager {
            * 就是说 一个 BPOfferService 对应了两个 BPServiceActor
            */
           //
-
           BPOfferService bpos = createBPOS(addrs);
 
           bpByNameserviceId.put(nsToAdd, bpos);

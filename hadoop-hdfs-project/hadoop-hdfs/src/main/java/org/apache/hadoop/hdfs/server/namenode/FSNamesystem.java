@@ -4520,25 +4520,54 @@ public class FSNamesystem implements Namesystem, FSNamesystemMBean,
    * which the namenode was not aware of; or the datanode is a replacement
    * node for the data storage that was previously served by a different
    * or the same (in terms of host:port) datanode.
+   *
+   * TODO 1
+   * 注册的目的是确定新的 datanode 是否服务于新的数据存储，并将报告 namenode 不知道的新数据块副本
+   * 或者datanode 是数据存储的替换节点，该数据存储以前由不同的或相同的（就主机：端口)数据节点
+   *
    * The data storages are distinguished by their storageIDs. When a new
    * data storage is reported the namenode issues a new unique storageID.
+   *
+   * TODO 2
+   *
+   * 数据存储通过其storageid来区分。报告新的数据存储时，namenode会发出一个新的唯一storageID。
+   *
+   *
    * <p>
    * Finally, the namenode returns its namespaceID as the registrationID
-   * for the datanodes. 
+   * for the datanodes.
+   *
+   * TODO 3
+   * namenode 返回其 namespaceID 作为datanodes 的registrationID。
+   *
    * namespaceID is a persistent attribute of the name space.
    * The registrationID is checked every time the datanode is communicating
-   * with the namenode. 
+   * with the namenode.
+   *
+   * TODO 4
+   * namespaceID 是名称空间的持久属性。每次 datanode 与 namenode 通信时，都会检查 registrationID。
+   *
    * Datanodes with inappropriate registrationID are rejected.
+   *
+   * TODO 5
+   * 拒绝注册ID不正确的数据节点
+   *
    * If the namenode stops, and then restarts it can restore its 
    * namespaceID and will continue serving the datanodes that has previously
    * registered with the namenode without restarting the whole cluster.
-   * 
+   *
+   * TODO 6
+   *
+   *  如果namenode停止，然后重新启动，它可以恢复其namespaceID，
+   *  并将继续服务于先前已向namenode注册的datanode，而无需重新启动整个集群。
+   *
    * @see org.apache.hadoop.hdfs.server.datanode.DataNode
    */
   void registerDatanode(DatanodeRegistration nodeReg) throws IOException {
     writeLock();
     try {
       // 获取 DataManager
+      // 获取 blockManager  获取 datanodeManager
       getBlockManager().getDatanodeManager().registerDatanode(nodeReg);
 
       checkSafeMode();

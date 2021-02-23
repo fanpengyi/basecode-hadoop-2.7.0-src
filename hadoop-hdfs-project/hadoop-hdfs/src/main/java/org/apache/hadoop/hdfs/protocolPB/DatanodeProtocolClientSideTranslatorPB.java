@@ -75,6 +75,10 @@ import com.google.protobuf.ServiceException;
  * This class is the client side translator to translate the requests made on
  * {@link DatanodeProtocol} interfaces to the RPC server implementing
  * {@link DatanodeProtocolPB}.
+ *
+ *
+ * 这个类是客户端的代理类 用来转换 DatanodeProtocol 接口的请求到 RPC server
+ *
  */
 @InterfaceAudience.Private
 @InterfaceStability.Stable
@@ -97,12 +101,16 @@ public class DatanodeProtocolClientSideTranslatorPB implements
     RPC.setProtocolEngine(conf, DatanodeProtocolPB.class,
         ProtobufRpcEngine.class);
     UserGroupInformation ugi = UserGroupInformation.getCurrentUser();
+    //创建 DatanodeProtocolPB
     rpcProxy = createNamenode(nameNodeAddr, conf, ugi);
   }
 
   private static DatanodeProtocolPB createNamenode(
       InetSocketAddress nameNodeAddr, Configuration conf,
       UserGroupInformation ugi) throws IOException {
+
+    //获取namenode 的代理，就是客户端
+
     return RPC.getProtocolProxy(DatanodeProtocolPB.class,
         RPC.getProtocolVersion(DatanodeProtocolPB.class), nameNodeAddr, ugi,
         conf, NetUtils.getSocketFactory(conf, DatanodeProtocolPB.class),
@@ -121,6 +129,7 @@ public class DatanodeProtocolClientSideTranslatorPB implements
         .newBuilder().setRegistration(PBHelper.convert(registration));
     RegisterDatanodeResponseProto resp;
     try {
+      //TODO 调用服务端的方法进行注册
       resp = rpcProxy.registerDatanode(NULL_CONTROLLER, builder.build());
     } catch (ServiceException se) {
       throw ProtobufHelper.getRemoteException(se);
