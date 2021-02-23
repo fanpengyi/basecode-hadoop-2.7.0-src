@@ -86,6 +86,8 @@ import static org.apache.hadoop.util.ExitUtil.terminate;
 import static org.apache.hadoop.util.ToolRunner.confirmPrompt;
 
 /**********************************************************
+ * TODO test git
+ *
  * NameNode serves as both directory namespace manager and
  * "inode table" for the Hadoop DFS.  There is a single NameNode
  * running in any DFS deployment.  (Well, except when there
