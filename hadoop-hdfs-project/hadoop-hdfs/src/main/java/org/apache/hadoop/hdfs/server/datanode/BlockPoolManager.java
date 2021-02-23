@@ -222,7 +222,7 @@ class BlockPoolManager {
           //TODO 重要的关系
           /**
            * 一个联邦对应一个 BPOfferService
-           * 一个联邦里面的一个NameNode 就是一个 BpserviceActor
+           * 一个联邦里面有两个 NameNode (HA) ,一个NameNode 就是一个 BpserviceActor
            * 就是说 一个 BPOfferService 对应了两个 BPServiceActor
            */
           //

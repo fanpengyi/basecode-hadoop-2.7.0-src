@@ -815,7 +815,6 @@ public class DataNode extends ReconfigurableBase
    * Http Policy is decided.
    *
    *
-   *
    */
   private void startInfoServer(Configuration conf)
     throws IOException {
@@ -852,6 +851,7 @@ public class DataNode extends ReconfigurableBase
 
     //DataNode Httpserver
     this.httpServer = new DatanodeHttpServer(conf, jettyAddr, httpServerChannel);
+
     httpServer.start();
 
     if (httpServer.getHttpAddress() != null) {
@@ -1186,6 +1186,7 @@ public class DataNode extends ReconfigurableBase
     }
     this.conf = conf;
     this.dnConf = new DNConf(conf);
+
     checkSecureConfig(dnConf, conf, resources);
 
     this.spanReceiverHost = SpanReceiverHost.getInstance(conf);
@@ -1586,7 +1587,7 @@ public class DataNode extends ReconfigurableBase
    * Creates either NIO or regular depending on socketWriteTimeout.
    */
   protected Socket newSocket() throws IOException {
-    return (dnConf.socketWriteTimeout > 0) ? 
+    return (dnConf.socketWriteTimeout > 0) ?
            SocketChannel.open().socket() : new Socket();                                   
   }
 
