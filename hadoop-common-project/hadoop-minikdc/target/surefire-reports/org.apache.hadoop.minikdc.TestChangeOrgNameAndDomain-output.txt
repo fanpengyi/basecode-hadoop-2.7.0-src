@@ -1,0 +1,12 @@
+2021-02-22 15:45:12,812 INFO  MiniKdc - Configuration:
+2021-02-22 15:45:12,813 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 15:45:12,814 INFO  MiniKdc -   debug: false
+2021-02-22 15:45:12,815 INFO  MiniKdc -   transport: TCP
+2021-02-22 15:45:12,815 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 15:45:12,815 INFO  MiniKdc -   org.name: APACHE
+2021-02-22 15:45:12,815 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 15:45:12,815 INFO  MiniKdc -   org.domain: COM
+2021-02-22 15:45:12,815 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 15:45:12,815 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 15:45:12,815 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 15:45:12,815 INFO  MiniKdc - ---------------------------------------------------------------

@@ -1,0 +1,12 @@
+#surefire_0
+#Mon Feb 22 15:45:11 CST 2021
+java.net.preferIPv4Stack=true
+java.security.krb5.conf=D\:\\fpy\\study\\NX\\basecode\\hadoop-2.7.0-src\\hadoop-common-project\\hadoop-minikdc/src/test/resources/krb5.conf
+idea.version=2018.2.5
+user.dir=D\:\\fpy\\study\\NX\\basecode\\hadoop-2.7.0-src\\hadoop-common-project\\hadoop-minikdc
+maven.repo.local=D\:\\apache-maven-3.3.9\\localRepositories
+test.build.data=D\:\\fpy\\study\\NX\\basecode\\hadoop-2.7.0-src\\hadoop-common-project\\hadoop-minikdc\\target/test-dir
+localRepository=D\:\\apache-maven-3.3.9\\localRepositories
+test.build.dir=D\:\\fpy\\study\\NX\\basecode\\hadoop-2.7.0-src\\hadoop-common-project\\hadoop-minikdc\\target/test-dir
+basedir=D\:\\fpy\\study\\NX\\basecode\\hadoop-2.7.0-src\\hadoop-common-project\\hadoop-minikdc
+java.security.egd=file\:/dev/urandom

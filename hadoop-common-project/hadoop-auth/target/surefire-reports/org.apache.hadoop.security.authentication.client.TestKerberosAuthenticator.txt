@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 679.199 sec <<< FAILURE! - in org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+testAuthenticationHttpClientPost[0](org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator)  Time elapsed: 46.162 sec  <<< ERROR!
+org.apache.http.client.ClientProtocolException: null
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:693)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:520)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.hadoop.security.authentication.client.AuthenticatorTestCase.doHttpClientRequest(AuthenticatorTestCase.java:265)
+	at org.apache.hadoop.security.authentication.client.AuthenticatorTestCase._testAuthenticationHttpClient(AuthenticatorTestCase.java:291)
+	at org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator$4.call(TestKerberosAuthenticator.java:160)
+	at org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator$4.call(TestKerberosAuthenticator.java:157)
+	at org.apache.hadoop.security.authentication.KerberosTestUtils$1.run(KerberosTestUtils.java:102)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.authentication.KerberosTestUtils.doAs(KerberosTestUtils.java:99)
+	at org.apache.hadoop.security.authentication.KerberosTestUtils.doAsClient(KerberosTestUtils.java:115)
+	at org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator.testAuthenticationHttpClientPost(TestKerberosAuthenticator.java:157)
+
+testAuthenticationHttpClientPost[1](org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator)  Time elapsed: 29.451 sec  <<< ERROR!
+org.apache.http.client.ClientProtocolException: null
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:693)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:520)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
+	at org.apache.hadoop.security.authentication.client.AuthenticatorTestCase.doHttpClientRequest(AuthenticatorTestCase.java:265)
+	at org.apache.hadoop.security.authentication.client.AuthenticatorTestCase._testAuthenticationHttpClient(AuthenticatorTestCase.java:291)
+	at org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator$4.call(TestKerberosAuthenticator.java:160)
+	at org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator$4.call(TestKerberosAuthenticator.java:157)
+	at org.apache.hadoop.security.authentication.KerberosTestUtils$1.run(KerberosTestUtils.java:102)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.authentication.KerberosTestUtils.doAs(KerberosTestUtils.java:99)
+	at org.apache.hadoop.security.authentication.KerberosTestUtils.doAsClient(KerberosTestUtils.java:115)
+	at org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator.testAuthenticationHttpClientPost(TestKerberosAuthenticator.java:157)
+

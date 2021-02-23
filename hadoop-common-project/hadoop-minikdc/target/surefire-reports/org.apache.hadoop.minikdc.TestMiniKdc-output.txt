@@ -1,0 +1,72 @@
+2021-02-22 11:06:23,138 INFO  MiniKdc - Configuration:
+2021-02-22 11:06:23,138 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:06:23,142 INFO  MiniKdc -   debug: false
+2021-02-22 11:06:23,142 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:06:23,142 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:06:23,142 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:06:23,142 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:06:23,142 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:06:23,142 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:06:23,142 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:06:23,143 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:06:23,143 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:06:51,242 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:06:51,250 INFO  MiniKdc - MiniKdc listening at port: 62235
+2021-02-22 11:06:51,250 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-minikdc\target\1613963183137\krb5.conf
+2021-02-22 11:06:53,187 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:07:04,595 INFO  MiniKdc - Configuration:
+2021-02-22 11:07:04,595 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:07:04,595 INFO  MiniKdc -   debug: false
+2021-02-22 11:07:04,596 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:07:04,596 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:07:04,596 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:07:04,596 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:07:04,596 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:07:04,596 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:07:04,596 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:07:04,596 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:07:04,596 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:07:22,641 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:07:22,656 INFO  MiniKdc - MiniKdc listening at port: 62306
+2021-02-22 11:07:22,656 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-minikdc\target\1613963224595\krb5.conf
+2021-02-22 11:07:22,658 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:07:33,027 INFO  MiniKdc - Configuration:
+2021-02-22 11:07:33,027 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:07:33,027 INFO  MiniKdc -   debug: false
+2021-02-22 11:07:33,027 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:07:33,027 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:07:33,027 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:07:33,027 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:07:33,027 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:07:33,028 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:07:33,028 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:07:33,028 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:07:33,028 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:07:50,010 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:07:50,012 INFO  MiniKdc - MiniKdc listening at port: 62331
+2021-02-22 11:07:50,013 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-minikdc\target\1613963253027\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-minikdc\target\foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator false KeyTab is D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-minikdc\target\foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:07:51,150 INFO  KdcServer - Kerberos service stopped.

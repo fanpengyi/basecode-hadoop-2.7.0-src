@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b25d3533-ce9b-496b-993c-5b6cb56f82e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-hdfs-nfs-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-httpfs-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-kms-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-mapreduce-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-nfs-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-sls.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-src.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-tools.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-assemblies/target/classes/assemblies/hadoop-yarn-dist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceAudience$LimitedPrivate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceAudience$Private.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceAudience$Public.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceAudience.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceStability$Evolving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceStability$Stable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceStability$Unstable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/InterfaceStability.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/ExcludePrivateAnnotationsJDiffDoclet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/ExcludePrivateAnnotationsStandardDoclet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/IncludePublicAnnotationsStandardDoclet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/RootDocProcessor$ExcludeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/RootDocProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/StabilityOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/classes/org/apache/hadoop/classification/tools/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth-examples/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/AuthenticatedURL$Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/AuthenticatedURL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/AuthenticationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/Authenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/ConnectionConfigurator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/KerberosAuthenticator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/KerberosAuthenticator$KerberosConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/client/PseudoAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/AltKerberosAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/AuthenticationFilter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/AuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/AuthenticationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler$KerberosConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/server/PseudoAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/AuthToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/FileSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/KerberosName$BadFormatString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/KerberosName$NoMatchingRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/KerberosName$Rule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/KerberosName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/KerberosUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/RandomSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/RolloverSignerSecretProvider$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/RolloverSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/Signer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/SignerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/SignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider$JaasConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider$SASLOwnerACLProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/classes/org/apache/hadoop/util/PlatformName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/KerberosTestUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/KerberosTestUtils$KerberosConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/KerberosTestUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/AuthenticatorTestCase$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/AuthenticatorTestCase$TestConnectionConfigurator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/AuthenticatorTestCase$TestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/AuthenticatorTestCase$TestServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/AuthenticatorTestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestAuthenticatedURL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestKerberosAuthenticator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestKerberosAuthenticator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestKerberosAuthenticator$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestKerberosAuthenticator$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestKerberosAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/client/TestPseudoAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAltKerberosAuthenticationHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAltKerberosAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter$DummyAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestAuthenticationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestKerberosAuthenticationHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestKerberosAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/server/TestPseudoAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/StringSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/StringSignerSecretProviderCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestAuthToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestFileSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestJaasConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestKerberosName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestKerberosUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestRandomSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestRolloverSignerSecretProvider$TRolloverSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestRolloverSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestSigner$TestSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestSigner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestStringSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/test-classes/org/apache/hadoop/security/authentication/util/TestZKSignerSecretProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/META-INF/services/org.apache.hadoop.crypto.key.KeyProviderFactory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/META-INF/services/org.apache.hadoop.fs.FileSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/META-INF/services/org.apache.hadoop.io.compress.CompressionCodec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/META-INF/services/org.apache.hadoop.security.SecurityInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/META-INF/services/org.apache.hadoop.security.alias.CredentialProviderFactory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/common-version-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/core-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/classes/org.apache.hadoop.application-classloader.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/META-INF/services/org.apache.hadoop.crypto.key.KeyProviderFactory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/META-INF/services/org.apache.hadoop.security.token.TokenIdentifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/contract/ftp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/contract/localfs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/contract/rawlocal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/fi-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/hadoop-policy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/hdfs7067.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/javakeystoreprovider.password" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/jets3t.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test-fake-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test-patch.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test.har/.part-0.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test.har/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test.har/_index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test.har/_masterindex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/test.har/part-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/testConf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/test-classes/webapps/static/test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-kms/target/test-classes/log4j-kmsaudit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-kms/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-kms/target/test-classes/mini-kms-acls-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/classes/minikdc-krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/classes/minikdc.ldiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/classes/org/apache/hadoop/minikdc/KerberosSecurityTestcase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/classes/org/apache/hadoop/minikdc/MiniKdc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/classes/org/apache/hadoop/minikdc/MiniKdc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/test-classes/org/apache/hadoop/minikdc/TestChangeOrgNameAndDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/test-classes/org/apache/hadoop/minikdc/TestMiniKdc$KerberosConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/test-classes/org/apache/hadoop/minikdc/TestMiniKdc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-common-project/hadoop-nfs/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/classes/default-log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/classes/httpfs-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/classes/httpfs.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/classutils.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/default-log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/hdfs-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/httpfs-log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/testserver-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/testserver.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/testserverwebapp1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/test-classes/testserverwebapp2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-nfs/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/HeartbeatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/HeartbeatManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BPOfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BPOfferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BPServiceActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BPServiceActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BlockPoolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BlockPoolManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataXceiverServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataXceiverServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/LeaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/LeaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourcePolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourcePolicy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeRpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/classes/META-INF/services/org.apache.hadoop.fs.FileSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenIdentifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenRenewer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/classes/hdfs-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/META-INF/services/org.apache.hadoop.crypto.key.KeyProviderFactory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/META-INF/services/org.apache.hadoop.security.token.TokenRenewer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/contract/hdfs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/data120bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/data15bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/data1k" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/data30bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/data60bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/editsStored" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/editsStored.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/empty-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/fi-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/fsimageV18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/fsimageV19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-0.23-reserved.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-1-reserved.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-1.0-multiblock-file.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-2-reserved.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-22-dfs-dir.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-24-datanode-dir.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-datanode-dir.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-dfs-dir.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop-policy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hadoop1-bbw.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hdfs-site.malformed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/hdfs-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/image-with-buggy-append.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/image-with-zero-block-size.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testAclCLI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testCacheAdminConf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testCryptoConf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testHDFSConf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testUpgradeFrom22FixesStorageIDs.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testUpgradeFrom22FixesStorageIDs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testUpgradeFrom22via26FixesStorageIDs.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testUpgradeFrom22via26FixesStorageIDs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testUpgradeFrom26PreservesStorageIDs.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testUpgradeFrom26PreservesStorageIDs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/testXAttrConf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/target/classes/META-INF/services/org.apache.hadoop.security.SecurityInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/classes/META-INF/services/org.apache.hadoop.mapreduce.protocol.ClientProtocolProvider" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenIdentifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenRenewer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenIdentifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenRenewer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/mapred-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/org/apache/hadoop/mapreduce/FileSystemCounter.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/org/apache/hadoop/mapreduce/JobCounter.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/org/apache/hadoop/mapreduce/TaskCounter.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/org/apache/hadoop/mapreduce/lib/input/FileInputFormatCounter.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/classes/org/apache/hadoop/mapreduce/lib/output/FileOutputFormatCounter.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/blockEndingInCR.txt.bz2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/blockEndingInCRThenLF.txt.bz2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/mapred-queues.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/recordSpanningMultipleSplits.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/recordSpanningMultipleSplits.txt.bz2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/test-classes/testBOM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_0.23.9-FAILED.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_1329348432655_0001-1329348443227-user-Sleep+job-1329348468601-10-1-SUCCEEDED-default.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_1329348432655_0001_conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_1393307629410_0001-1393307687476-user-Sleep+job-1393307723835-0-0-FAILED-default-1393307693920.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_1416424547277_0002-1416424775281-root-TeraGen-1416424785433-2-0-SUCCEEDED-default-1416424779349.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_2.0.3-alpha-FAILED.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/job_2.4.0-FAILED.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/classes/META-INF/services/org.apache.hadoop.mapreduce.protocol.ClientProtocolProvider" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/classes/META-INF/services/org.apache.hadoop.security.SecurityInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/test-classes/hdfs-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/test-classes/job_1329348432655_0001-10.jhist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/protoc/ProtocMojo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/util/Exec$OutputBufferThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/util/Exec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/util/FileSetUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/versioninfo/VersionInfoMojo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/versioninfo/VersionInfoMojo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/versioninfo/VersionInfoMojo$SCM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-maven-plugins/target/classes/org/apache/hadoop/maven/plugin/versioninfo/VersionInfoMojo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-ant/target/classes/org/apache/hadoop/ant/antlib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-aws/target/classes/META-INF/services/org.apache.hadoop.fs.FileSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-aws/target/test-classes/contract/s3a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-aws/target/test-classes/contract/s3n.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-aws/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-aws/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-azure/target/classes/META-INF/services/org.apache.hadoop.fs.FileSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-azure/target/test-classes/azure-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-azure/target/test-classes/hadoop-metrics2-azure-file-system.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-azure/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-distcp/target/classes/distcp-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-distcp/target/test-classes/sslConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-gridmix/target/test-classes/data/wordcount.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-gridmix/target/test-classes/data/wordcount.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-gridmix/target/test-classes/data/wordcount2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-openstack/target/test-classes/contract/swift.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-openstack/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-openstack/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/test-classes/fair-scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/test-classes/simulate.html.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/test-classes/simulate.info.html.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/test-classes/sls-runner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/test-classes/track.html.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/test-classes/yarn-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-tools/hadoop-streaming/target/test-classes/capacity-scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/target/test-classes/yarn-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-unmanaged-am-launcher/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-unmanaged-am-launcher/target/test-classes/yarn-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/target/test-classes/config-with-security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/META-INF/services/org.apache.hadoop.security.SecurityInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenIdentifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenRenewer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/applicationhistory/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/cluster/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/jobhistory/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/mapreduce/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/node/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/proxy/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/busy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/css/demo_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/css/demo_table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/css/jui-dt.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/Sorting icons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/back_disabled.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/back_enabled.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/forward_disabled.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/forward_enabled.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/sort_asc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/sort_both.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/images/sort_desc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.9.4/js/jquery.dataTables.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/hadoop-st.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/jquery-1.8.2.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/jquery-ui-1.9.1.custom.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jt/jquery.jstree.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/yarn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/yarn.dt.plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/test/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/yarn/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/yarn-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/yarn-version-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/target/classes/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptFinishDataPBImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptFinishDataPBImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptStartDataPBImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptStartDataPBImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryManagerOnTimelineStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryManagerOnTimelineStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/classes/META-INF/services/org.apache.hadoop.security.SecurityInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/classes/META-INF/services/org.apache.hadoop.security.SecurityInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/classes/META-INF/services/org.apache.hadoop.security.token.TokenIdentifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/classes/container-log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/test-classes/mock-container-executer-with-error" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/test-classes/mock-container-executor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/META-INF/services/org.apache.hadoop.security.token.TokenRenewer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/capacity-scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/hadoop-policy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/test-fair-scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes/yarn-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/test-classes/capacity-scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/test-classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/test-classes/krb5.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/test-classes/log4j.properties" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-sharedcachemanager/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-extras/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-rumen/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-nfs/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs-plugins/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-auth/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-datajoin/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-common/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-project/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-nfs/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-openstack/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-web-proxy/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-kms/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/contrib/bkjournal/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-annotations/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-dist/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-minikdc/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-site/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-unmanaged-am-launcher/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-ant/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/hadoop-auth-examples/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-assemblies/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-pipes/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-azure/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-client/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-distcp/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-archives/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-maven-plugins/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-hdfs-project/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs-httpfs/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-sls/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-project-dist/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-common-project/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-examples/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-tools-dist/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-minicluster/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-gridmix/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-aws/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-tools/hadoop-streaming/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-mapreduce-project/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="865136526">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="729" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="729" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="1649" column="18" lean-forward="true" selection-start-line="1649" selection-start-column="18" selection-end-line="1649" selection-end-column="20" />
+              <folding>
+                <element signature="e#20426#20427#0" expanded="true" />
+                <element signature="e#20463#20464#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="5421" column="6" selection-start-line="5421" selection-start-column="6" selection-end-line="5421" selection-end-column="6" />
+              <folding>
+                <element signature="e#60947#60948#0" expanded="true" />
+                <element signature="e#60987#60988#0" expanded="true" />
+                <element signature="e#214757#214758#0" expanded="true" />
+                <element signature="e#214803#214804#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="3350" column="13" selection-start-line="3350" selection-start-column="13" selection-end-line="3350" selection-end-column="13" />
+              <folding>
+                <element signature="e#133089#133090#0" expanded="true" />
+                <element signature="e#133122#133123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/LeaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/DFSConfigKeys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="374" column="63" selection-start-line="374" selection-start-column="63" selection-end-line="374" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="202" column="27" selection-start-line="202" selection-start-column="27" selection-end-line="202" selection-end-column="27" />
+              <folding>
+                <element signature="e#7448#7449#0" expanded="true" />
+                <element signature="e#7480#7481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourcePolicy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/CheckableNameNodeResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/DF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/HdfsServerConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="101" column="23" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>main</find>
+      <find>[question]</find>
+      <find>SpanReceiverHost</find>
+      <find>blockSafe</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\fpy\study\NX\basecodeNew\hadoop-2.7.0-src\hadoop-hdfs-project</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeRpcServer.java" />
+        <option value="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java" />
+        <option value="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java" />
+        <option value="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourcePolicy.java" />
+        <option value="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/LeaseManager.java" />
+        <option value="$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.3.9\localRepositories" />
+        <option name="mavenHome" value="D:/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.3.9\conf\settings-basecode.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="src" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-70" />
+    <option name="y" value="35" />
+    <option name="width" value="1932" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hadoop-main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop-2.7.0-src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop-main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop-2.7.0-src" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-hdfs-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop-main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop-2.7.0-src" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-hdfs-project" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-hdfs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoop-main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoop-2.7.0-src" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-hdfs-project" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop-hdfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="NameNode&#9;PSI&#9;JAVA://org.apache.hadoop.hdfs.server.namenode.NameNode" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1614049047208" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b25d3533-ce9b-496b-993c-5b6cb56f82e1" name="Default Changelist" comment="" />
+      <created>1614044410756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614044410756</updated>
+      <workItem from="1614044415729" duration="4620000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4620000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-70" y="35" width="1932" height="1039" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18856838" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Problems" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="2464" column="48" lean-forward="true" selection-start-line="2464" selection-start-column="48" selection-end-line="2464" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeHttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeRpcServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/protocol/HdfsConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/HdfsServerConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="101" column="23" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/DF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/CheckableNameNodeResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/DFSConfigKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="374" column="63" selection-start-line="374" selection-start-column="63" selection-end-line="374" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourcePolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNodeResourceChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="202" column="27" selection-start-line="202" selection-start-column="27" selection-end-line="202" selection-end-column="27" />
+          <folding>
+            <element signature="e#7448#7449#0" expanded="true" />
+            <element signature="e#7480#7481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/NameNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="1649" column="18" lean-forward="true" selection-start-line="1649" selection-start-column="18" selection-end-line="1649" selection-end-column="20" />
+          <folding>
+            <element signature="e#20426#20427#0" expanded="true" />
+            <element signature="e#20463#20464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/LeaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="3350" column="13" selection-start-line="3350" selection-start-column="13" selection-end-line="3350" selection-end-column="13" />
+          <folding>
+            <element signature="e#133089#133090#0" expanded="true" />
+            <element signature="e#133122#133123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="5421" column="6" selection-start-line="5421" selection-start-column="6" selection-end-line="5421" selection-end-column="6" />
+          <folding>
+            <element signature="e#60947#60948#0" expanded="true" />
+            <element signature="e#60987#60988#0" expanded="true" />
+            <element signature="e#214757#214758#0" expanded="true" />
+            <element signature="e#214803#214804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

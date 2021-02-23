@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.09 sec - in org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain

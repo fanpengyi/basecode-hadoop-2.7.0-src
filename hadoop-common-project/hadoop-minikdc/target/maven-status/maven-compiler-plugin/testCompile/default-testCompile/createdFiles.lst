@@ -1,0 +1,3 @@
+org\apache\hadoop\minikdc\TestChangeOrgNameAndDomain.class
+org\apache\hadoop\minikdc\TestMiniKdc.class
+org\apache\hadoop\minikdc\TestMiniKdc$KerberosConfiguration.class

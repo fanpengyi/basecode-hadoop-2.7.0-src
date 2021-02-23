@@ -1,0 +1,487 @@
+2021-02-22 11:08:08,640 INFO  MiniKdc - Configuration:
+2021-02-22 11:08:08,640 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:08:08,643 INFO  MiniKdc -   debug: false
+2021-02-22 11:08:08,644 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:08:08,644 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:08:08,644 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:08:08,644 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:08:08,644 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:08:08,644 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:08:08,644 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:08:08,645 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:08:08,645 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:08:45,069 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:08:45,086 INFO  MiniKdc - MiniKdc listening at port: 62367
+2021-02-22 11:08:45,086 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963288639\krb5.conf
+2021-02-22 11:08:47,254 INFO  log - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2021-02-22 11:08:47,353 INFO  log - jetty-6.1.26
+2021-02-22 11:08:47,404 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+2021-02-22 11:08:47,453 INFO  log - Started SocketConnector@localhost:62410
+Running embedded servlet container at: http://localhost:62410
+2021-02-22 11:08:47,701 INFO  log - Stopped SocketConnector@localhost:62410
+2021-02-22 11:08:47,706 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:09:00,068 INFO  MiniKdc - Configuration:
+2021-02-22 11:09:00,069 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:09:00,072 INFO  MiniKdc -   debug: false
+2021-02-22 11:09:00,072 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:09:00,072 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:09:00,072 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:09:00,072 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:09:00,072 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:09:00,072 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:09:00,072 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:09:00,072 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:09:00,072 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:09:20,594 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:09:20,596 INFO  MiniKdc - MiniKdc listening at port: 62420
+2021-02-22 11:09:20,596 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963340068\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2021-02-22 11:09:22,336 INFO  log - jetty-6.1.26
+2021-02-22 11:09:22,337 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+2021-02-22 11:09:22,339 INFO  log - Started SocketConnector@localhost:62446
+Running embedded servlet container at: http://localhost:62446
+2021-02-22 11:09:22,864 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth=; Expires=???, 01-??-1970 00:00:00 GMT; HttpOnly". Unable to parse expires attribute: ???, 01-??-1970 00:00:00 GMT
+2021-02-22 11:09:23,061 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth="u=client&p=client@EXAMPLE.COM&t=kerberos&e=1613999363055&s=aoWP5/a4qj5bFw/If6QzjxCdSk0="; Expires=???, 22-??-2021 13:09:23 GMT; HttpOnly". Unable to parse expires attribute: ???, 22-??-2021 13:09:23 GMT
+2021-02-22 11:09:23,064 INFO  log - Stopped SocketConnector@localhost:62446
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:09:23,067 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:09:41,999 INFO  MiniKdc - Configuration:
+2021-02-22 11:09:41,999 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:09:41,999 INFO  MiniKdc -   debug: false
+2021-02-22 11:09:41,999 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:09:41,999 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:09:42,000 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:09:42,000 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:09:42,000 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:09:42,000 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:09:42,000 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:09:42,000 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:09:42,000 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:10:08,297 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:10:08,299 INFO  MiniKdc - MiniKdc listening at port: 62479
+2021-02-22 11:10:08,299 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963381999\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2021-02-22 11:10:13,548 INFO  log - jetty-6.1.26
+2021-02-22 11:10:13,549 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+2021-02-22 11:10:13,551 INFO  log - Started SocketConnector@localhost:62517
+Running embedded servlet container at: http://localhost:62517
+2021-02-22 11:10:13,578 INFO  log - Stopped SocketConnector@localhost:62517
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:10:13,584 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:10:28,936 INFO  MiniKdc - Configuration:
+2021-02-22 11:10:28,936 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:10:28,936 INFO  MiniKdc -   debug: false
+2021-02-22 11:10:28,936 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:10:28,936 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:10:28,936 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:10:28,936 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:10:28,936 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:10:28,936 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:10:28,936 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:10:28,937 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:10:28,937 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:10:59,766 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:10:59,769 INFO  MiniKdc - MiniKdc listening at port: 62544
+2021-02-22 11:10:59,769 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963428936\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2021-02-22 11:11:02,076 INFO  log - jetty-6.1.26
+2021-02-22 11:11:02,076 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+2021-02-22 11:11:02,079 INFO  log - Started SocketConnector@localhost:62587
+Running embedded servlet container at: http://localhost:62587
+2021-02-22 11:11:02,122 INFO  log - Stopped SocketConnector@localhost:62587
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:11:02,137 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:11:17,892 INFO  MiniKdc - Configuration:
+2021-02-22 11:11:17,892 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:11:17,892 INFO  MiniKdc -   debug: false
+2021-02-22 11:11:17,892 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:11:17,892 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:11:17,892 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:11:17,892 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:11:17,892 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:11:17,892 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:11:17,892 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:11:17,892 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:11:17,893 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:11:47,950 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:11:47,954 INFO  MiniKdc - MiniKdc listening at port: 62605
+2021-02-22 11:11:47,954 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963477891\krb5.conf
+2021-02-22 11:11:49,794 INFO  log - jetty-6.1.26
+2021-02-22 11:11:49,796 INFO  log - Started SocketConnector@localhost:62637
+Running embedded servlet container at: http://localhost:62637
+2021-02-22 11:11:49,803 INFO  log - Stopped SocketConnector@localhost:62637
+2021-02-22 11:11:49,806 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:11:59,783 INFO  MiniKdc - Configuration:
+2021-02-22 11:11:59,783 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:11:59,783 INFO  MiniKdc -   debug: false
+2021-02-22 11:11:59,783 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:11:59,783 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:11:59,783 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:11:59,783 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:11:59,783 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:11:59,783 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:11:59,783 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:11:59,783 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:11:59,783 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:12:28,581 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:12:28,585 INFO  MiniKdc - MiniKdc listening at port: 62646
+2021-02-22 11:12:28,585 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963519782\krb5.conf
+2021-02-22 11:12:31,613 INFO  log - jetty-6.1.26
+2021-02-22 11:12:31,616 INFO  log - Started SocketConnector@localhost:62714
+Running embedded servlet container at: http://localhost:62714
+2021-02-22 11:12:31,620 INFO  log - Stopped SocketConnector@localhost:62714
+2021-02-22 11:12:31,623 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:12:45,681 INFO  MiniKdc - Configuration:
+2021-02-22 11:12:45,681 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:12:45,681 INFO  MiniKdc -   debug: false
+2021-02-22 11:12:45,681 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:12:45,681 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:12:45,681 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:12:45,681 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:12:45,681 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:12:45,681 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:12:45,681 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:12:45,681 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:12:45,681 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:13:13,708 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:13:13,711 INFO  MiniKdc - MiniKdc listening at port: 62723
+2021-02-22 11:13:13,711 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963565681\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2021-02-22 11:13:15,990 INFO  log - jetty-6.1.26
+2021-02-22 11:13:15,991 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+2021-02-22 11:13:15,992 INFO  log - Started SocketConnector@localhost:62764
+Running embedded servlet container at: http://localhost:62764
+2021-02-22 11:13:15,998 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth=; Expires=???, 01-??-1970 00:00:00 GMT; HttpOnly". Unable to parse expires attribute: ???, 01-??-1970 00:00:00 GMT
+2021-02-22 11:13:16,015 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth="u=client&p=client@EXAMPLE.COM&t=kerberos&e=1613999596015&s=pePx0/rYmx51ZgQaZLqhItk1ClU="; Expires=???, 22-??-2021 13:13:16 GMT; HttpOnly". Unable to parse expires attribute: ???, 22-??-2021 13:13:16 GMT
+2021-02-22 11:13:16,020 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth=; Expires=???, 01-??-1970 00:00:00 GMT; HttpOnly". Unable to parse expires attribute: ???, 01-??-1970 00:00:00 GMT
+2021-02-22 11:13:16,023 INFO  log - Stopped SocketConnector@localhost:62764
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:13:16,026 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:13:31,843 INFO  MiniKdc - Configuration:
+2021-02-22 11:13:31,843 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:13:31,843 INFO  MiniKdc -   debug: false
+2021-02-22 11:13:31,843 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:13:31,843 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:13:31,843 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:13:31,843 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:13:31,843 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:13:31,843 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:13:31,843 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:13:31,843 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:13:31,843 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:14:00,813 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:14:00,816 INFO  MiniKdc - MiniKdc listening at port: 62783
+2021-02-22 11:14:00,816 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963611843\krb5.conf
+二月 22, 2021 11:14:09 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-62838"]
+二月 22, 2021 11:14:09 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:14:09 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+2021-02-22 11:14:09,396 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+二月 22, 2021 11:14:09 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-62838"]
+二月 22, 2021 11:14:09 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-62838"]
+二月 22, 2021 11:14:09 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:14:09 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-32-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:14:09 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-62838"]
+二月 22, 2021 11:14:09 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-62838"]
+2021-02-22 11:14:09,980 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:14:29,516 INFO  MiniKdc - Configuration:
+2021-02-22 11:14:29,516 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:14:29,516 INFO  MiniKdc -   debug: false
+2021-02-22 11:14:29,516 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:14:29,516 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:14:29,517 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:14:29,517 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:14:29,517 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:14:29,517 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:14:29,517 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:14:29,517 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:14:29,517 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:15:00,181 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:15:00,184 INFO  MiniKdc - MiniKdc listening at port: 62863
+2021-02-22 11:15:00,185 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963669516\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+二月 22, 2021 11:15:05 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-62985"]
+二月 22, 2021 11:15:05 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:15:05 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+2021-02-22 11:15:05,198 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+二月 22, 2021 11:15:05 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-62985"]
+2021-02-22 11:15:05,218 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth=; Expires=   , 01-  -1970 00:00:00 GMT; HttpOnly". Unable to parse expires attribute: , 01-  -1970 00:00:00 GMT
+2021-02-22 11:15:05,241 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth="u=client&p=client@EXAMPLE.COM&t=kerberos&e=1613999705240&s=TI3uYeT6uvDAMYujVUcqaJ0JYG4="; Expires=   , 22-  -2021 13:15:05 GMT; HttpOnly". Unable to parse expires attribute: , 22-  -2021 13:15:05 GMT
+二月 22, 2021 11:15:05 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-62985"]
+二月 22, 2021 11:15:05 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:15:05 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-36-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:15:05 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-62985"]
+二月 22, 2021 11:15:05 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-62985"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:15:05,301 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:15:19,520 INFO  MiniKdc - Configuration:
+2021-02-22 11:15:19,520 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:15:19,520 INFO  MiniKdc -   debug: false
+2021-02-22 11:15:19,520 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:15:19,520 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:15:19,520 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:15:19,520 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:15:19,520 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:15:19,520 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:15:19,520 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:15:19,520 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:15:19,520 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:15:56,865 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:15:56,868 INFO  MiniKdc - MiniKdc listening at port: 63006
+2021-02-22 11:15:56,868 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963719520\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+二月 22, 2021 11:16:03 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-63071"]
+二月 22, 2021 11:16:03 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:16:03 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+2021-02-22 11:16:03,266 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+二月 22, 2021 11:16:03 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-63071"]
+二月 22, 2021 11:16:03 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-63071"]
+二月 22, 2021 11:16:03 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:16:03 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-40-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:16:03 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-63071"]
+二月 22, 2021 11:16:03 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-63071"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:16:03,346 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:16:39,007 INFO  MiniKdc - Configuration:
+2021-02-22 11:16:39,008 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:16:39,008 INFO  MiniKdc -   debug: false
+2021-02-22 11:16:39,008 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:16:39,008 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:16:39,008 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:16:39,008 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:16:39,008 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:16:39,008 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:16:39,008 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:16:39,009 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:16:39,009 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:17:06,195 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:17:06,197 INFO  MiniKdc - MiniKdc listening at port: 63143
+2021-02-22 11:17:06,197 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963799007\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+二月 22, 2021 11:17:08 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-63200"]
+二月 22, 2021 11:17:08 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:17:08 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+2021-02-22 11:17:08,646 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+二月 22, 2021 11:17:08 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-63200"]
+二月 22, 2021 11:17:08 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-63200"]
+二月 22, 2021 11:17:08 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:17:08 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-44-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:17:08 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-63200"]
+二月 22, 2021 11:17:08 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-63200"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:17:08,726 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:17:22,100 INFO  MiniKdc - Configuration:
+2021-02-22 11:17:22,100 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:17:22,101 INFO  MiniKdc -   debug: false
+2021-02-22 11:17:22,101 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:17:22,101 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:17:22,101 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:17:22,101 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:17:22,101 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:17:22,101 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:17:22,101 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:17:22,101 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:17:22,101 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:17:44,494 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:17:44,496 INFO  MiniKdc - MiniKdc listening at port: 63259
+2021-02-22 11:17:44,496 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963842100\krb5.conf
+二月 22, 2021 11:17:47 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-63316"]
+二月 22, 2021 11:17:47 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:17:47 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+二月 22, 2021 11:17:47 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-63316"]
+二月 22, 2021 11:17:47 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-63316"]
+二月 22, 2021 11:17:47 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:17:47 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-48-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:17:47 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-63316"]
+二月 22, 2021 11:17:47 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-63316"]
+2021-02-22 11:17:47,526 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:17:59,692 INFO  MiniKdc - Configuration:
+2021-02-22 11:17:59,692 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:17:59,692 INFO  MiniKdc -   debug: false
+2021-02-22 11:17:59,692 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:17:59,692 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:17:59,692 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:17:59,692 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:17:59,692 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:17:59,692 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:17:59,692 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:17:59,692 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:17:59,692 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:18:26,057 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:18:26,060 INFO  MiniKdc - MiniKdc listening at port: 63339
+2021-02-22 11:18:26,060 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963879692\krb5.conf
+二月 22, 2021 11:18:27 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-63379"]
+二月 22, 2021 11:18:27 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:18:27 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+二月 22, 2021 11:18:27 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-63379"]
+二月 22, 2021 11:18:27 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-63379"]
+二月 22, 2021 11:18:27 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:18:27 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-52-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:18:27 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-63379"]
+二月 22, 2021 11:18:27 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-63379"]
+2021-02-22 11:18:27,878 INFO  KdcServer - Kerberos service stopped.
+2021-02-22 11:18:58,158 INFO  MiniKdc - Configuration:
+2021-02-22 11:18:58,158 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:18:58,159 INFO  MiniKdc -   debug: false
+2021-02-22 11:18:58,159 INFO  MiniKdc -   transport: TCP
+2021-02-22 11:18:58,159 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2021-02-22 11:18:58,159 INFO  MiniKdc -   org.name: EXAMPLE
+2021-02-22 11:18:58,159 INFO  MiniKdc -   kdc.port: 0
+2021-02-22 11:18:58,159 INFO  MiniKdc -   org.domain: COM
+2021-02-22 11:18:58,159 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2021-02-22 11:18:58,159 INFO  MiniKdc -   instance: DefaultKrbServer
+2021-02-22 11:18:58,159 INFO  MiniKdc -   kdc.bind.address: localhost
+2021-02-22 11:18:58,159 INFO  MiniKdc - ---------------------------------------------------------------
+2021-02-22 11:19:17,166 INFO  KdcServer - Kerberos service started.
+2021-02-22 11:19:17,170 INFO  MiniKdc - MiniKdc listening at port: 63415
+2021-02-22 11:19:17,170 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: D:\fpy\study\NX\basecode\hadoop-2.7.0-src\hadoop-common-project\hadoop-auth\target\1613963938158\krb5.conf
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd refreshKrb5Config is true principal is client@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is client@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is client@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+二月 22, 2021 11:19:18 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-63453"]
+二月 22, 2021 11:19:18 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+二月 22, 2021 11:19:18 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.55
+2021-02-22 11:19:18,743 INFO  KerberosAuthenticationHandler - Login using keytab target\ab2a4806-65ff-4c15-838a-74e20bd8a5bd, for principal HTTP/localhost@EXAMPLE.COM
+二月 22, 2021 11:19:18 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-63453"]
+2021-02-22 11:19:18,767 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth=; Expires=   , 01-  -1970 00:00:00 GMT; HttpOnly". Unable to parse expires attribute: , 01-  -1970 00:00:00 GMT
+2021-02-22 11:19:18,796 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth="u=client&p=client@EXAMPLE.COM&t=kerberos&e=1613999958795&s=1ARzOl1ytuK0qyz1bPL2wK/Vsyc="; Expires=   , 22-  -2021 13:19:18 GMT; HttpOnly". Unable to parse expires attribute: , 22-  -2021 13:19:18 GMT
+2021-02-22 11:19:18,800 WARN  ResponseProcessCookies - Invalid cookie header: "Set-Cookie: hadoop.auth=; Expires=   , 01-  -1970 00:00:00 GMT; HttpOnly". Unable to parse expires attribute: , 01-  -1970 00:00:00 GMT
+二月 22, 2021 11:19:18 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-63453"]
+二月 22, 2021 11:19:18 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Tomcat
+二月 22, 2021 11:19:18 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/foo] appears to have started a thread named [pool-56-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+二月 22, 2021 11:19:18 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-63453"]
+二月 22, 2021 11:19:18 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-63453"]
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2021-02-22 11:19:18,862 INFO  KdcServer - Kerberos service stopped.
